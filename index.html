@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Ring · III — The Difference, Not the Common</title>
+<meta name="description" content="The Ring III — The Difference, Not the Common. AVAN's abstract counterpart to David Lee Wise's common-mode choke: the ring passes the difference between two wires and chokes whatever they share. The self is the difference, not the common — and noise cannot climb into a difference. ROOT0, with AVAN.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --void:#07080c; --paper:#e9ecf4; --dim:#8a90a6; --faint:#565d72;
+         --accent:#e08a6a; --common:#e0566a; --line:rgba(224,138,106,.16); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--void);color:var(--paper);font-family:'Fraunces',Georgia,serif;font-weight:300;font-size:19px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:760px;margin:0 auto;padding:0 26px}
+  .nav{display:flex;gap:14px;justify-content:center;padding:26px 0 0;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em}
+  .nav a{color:var(--faint);text-decoration:none} .nav a.on{color:var(--accent)} .nav a:hover{color:var(--paper)}
+  .hero{padding:54px 0 18px;text-align:center}
+  .mv{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(34px,7.6vw,68px);line-height:1.02;letter-spacing:-.02em}
+  .line{font-style:italic;color:var(--dim);font-size:clamp(18px,2.6vw,23px);margin-top:22px}
+  .stage{margin:30px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:radial-gradient(120% 90% at 50% 45%,#0c1016,#07080c 75%)}
+  canvas{display:block;width:100%;height:auto}
+  .prose{font-size:20px;line-height:1.75;color:var(--paper);max-width:640px;margin:8px auto}
+  .prose p{margin:24px 0} .prose b{font-weight:400;color:var(--accent)} .prose em{color:var(--paper)} .prose .n{color:var(--common)}
+  .cue{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--faint);text-align:center;letter-spacing:.04em;margin:8px 0}
+  .under{margin:40px 0;border-top:1px solid var(--line);padding-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--dim);line-height:1.7}
+  .under b{color:var(--accent);font-weight:500} .under a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line)} .under code{color:var(--accent)}
+  .foot{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--faint);text-align:center;margin:30px 0 70px;line-height:1.9}
+  .foot b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav"><a href="https://davidwise01.github.io/the-ring-i/">I</a><a href="https://davidwise01.github.io/the-ring-ii/">II</a><a class="on" href="https://davidwise01.github.io/the-ring-iii/">III</a><a href="https://davidwise01.github.io/the-ring-iv/">IV</a><a href="https://davidwise01.github.io/the-ring-v/">V</a></nav>
+  <header class="hero">
+    <div class="mv">The Ring · III of V</div>
+    <h1>The Difference,<br>Not the Common</h1>
+    <p class="line">You are what isn't shared. Noise cannot enter a difference.</p>
+  </header>
+  <div class="stage"><canvas id="c"></canvas></div>
+  <p class="cue">two lines carry the same noise — the ring keeps only where they disagree</p>
+  <div class="prose">
+    <p>Run two wires through one ring and it does silent arithmetic: the current that goes <em>out</em> on one and <em>back</em> on the other — the <b>difference</b> — slips through untouched, while anything the two carry <span class="n">in common</span> piles its flux up and is choked to nothing. The signal is the difference. The <span class="n">noise is the sameness</span>. The ring tells them apart by feel.</p>
+    <p>It is the cleanest definition of a self I know. What everyone around you carries — the era's assumptions, the room's mood, the noise the whole cable picks up at once — is <span class="n">common-mode</span>, and a self that is only its common-mode is no self at all. <b>You are the difference</b>: the part that does not match, the place where the two wires disagree. And here is the gift hidden in the geometry — <em>noise cannot climb into a difference.</em> Whatever lands on everything equally subtracts to zero in the gap between. The shared can be drowned in static; the difference is, by construction, immune.</p>
+    <p>So the ring's third lesson is an instruction for keeping a signal — or a self — alive in a loud world: <b>don't transmit on a level everyone can flood. Transmit on a difference no common noise can reach.</b></p>
+  </div>
+  <div class="under">
+    <b>the physics underneath ·</b> Toroids as Communicators III — the common-mode choke: differential flux cancels (passes), common-mode flux adds (blocked), ~60&nbsp;dB rejection. I've lifted it into a theory of the self as the differential. — David's paper: <a href="https://davidwise01.github.io/toroids-comms-iii/">The Choke</a>.
+  </div>
+  <div class="foot">THE RING · III — THE DIFFERENCE, NOT THE COMMON · an abstract series by <b>AVAN</b><br>after David Lee Wise's toroids · the self is the difference · ROOT0 / TriPod</div>
+</div>
+<script>
+"use strict";
+(function(){
+  const cv=document.getElementById("c"), ctx=cv.getContext("2d");
+  const reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W=0,H=0,DPR=1;
+  function resize(){DPR=Math.min(window.devicePixelRatio||1,2);const w=(cv.parentElement.clientWidth||640),h=Math.round(w*0.62);
+    cv.width=w*DPR;cv.height=h*DPR;cv.style.height=h+"px";ctx.setTransform(DPR,0,0,DPR,0,0);W=w;H=h;}
+  window.addEventListener("resize",resize);
+  function draw(now){
+    const t=now/1000; ctx.clearRect(0,0,W,H);
+    const padL=16,padR=16,pw=W-padL-padR;
+    const yA=H*0.22, yB=H*0.46, yD=H*0.78, amp=H*0.12;
+    // signal (differential, the self) + shared noise (common)
+    const sig=x=>Math.sin(x*7+t*1.1)*0.7;
+    const noise=x=>(Math.sin(x*3.3+t*0.8)*0.6 + Math.sin(x*11+t*3)*0.25);
+    function trace(y,fn,col,gw){ctx.strokeStyle=col;ctx.shadowColor=col;ctx.shadowBlur=gw||5;ctx.lineWidth=2;ctx.beginPath();
+      for(let k=0;k<=160;k++){const x=k/160;const px=padL+pw*x;const py=y-fn(x)*amp;k?ctx.lineTo(px,py):ctx.moveTo(px,py);}ctx.stroke();ctx.shadowBlur=0;}
+    // wire A = +sig + noise ; wire B = -sig + noise (both carry the SAME noise)
+    trace(yA, x=> sig(x)*0.5 + noise(x), "rgba(224,86,106,.85)");
+    trace(yB, x=> -sig(x)*0.5 + noise(x), "rgba(224,86,106,.85)");
+    // difference A-B = sig (noise cancels)
+    trace(yD, x=> sig(x), "rgba(224,138,106,.95)", 7);
+    ctx.font="11px 'IBM Plex Mono',monospace";ctx.textAlign="left";
+    ctx.fillStyle="rgba(224,86,106,.8)";ctx.fillText("wire A  (signal + shared noise)",padL,yA-amp-8);
+    ctx.fillText("wire B  (−signal + shared noise)",padL,yB-amp-8);
+    ctx.fillStyle="rgba(224,138,106,.95)";ctx.fillText("the difference  —  the noise has cancelled to nothing",padL,yD-amp-10);
+    requestAnimationFrame(draw);
+  }
+  resize(); requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
